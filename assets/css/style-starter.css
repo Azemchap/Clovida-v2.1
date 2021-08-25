@@ -563,8 +563,9 @@ mark,
 }
 
 .img-fluid {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
 }
 
 .img-thumbnail {
@@ -5261,11 +5262,9 @@ input[type="button"].btn-block {
 .breadcrumb {
   display: flex;
   flex-wrap: wrap;
-  padding: 0.75rem 1rem;
+  padding: 0.75rem 0rem;
   margin-bottom: 1rem;
   list-style: none;
-  background-color: #e9ecef;
-  border-radius: 0.25rem;
 }
 
 .breadcrumb-item+.breadcrumb-item {
@@ -14279,7 +14278,7 @@ body a {
   display: inline-block;
   font-size: 16px;
   line-height: 50px;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   font-weight: 600;
   transition: 0.3s ease-in;
   border-radius: 6px;
@@ -14750,6 +14749,8 @@ header.nav-fixed {
   color: var(--theme-rose);
 }
 
+
+
 @media (max-width: 991px) {
   .w3l-header .navbar-nav .nav-link {
     padding: 5px 15px;
@@ -14787,7 +14788,6 @@ header.nav-fixed {
   .mobile-position {
     position: absolute;
     right: 40px;
-    top: 10px;
   }
 
   .w3l-header {
@@ -14811,7 +14811,6 @@ header.nav-fixed {
   .mobile-position {
     position: absolute;
     right: 40px;
-    top: 5px;
   }
 }
 
@@ -14858,7 +14857,7 @@ header.nav-fixed {
 }
 
 .w3l-main-slider .banner-view {
-  background: url(../images/banner1.jpg) no-repeat center;
+  background: url(../images/braids/WeChat\ Image_20210813170854.jpg) no-repeat center;
   background-size: cover;
   min-height: 500px;
   position: relative;
@@ -14874,7 +14873,7 @@ header.nav-fixed {
 
 .w3l-main-slider .banner-view::before {
   content: "";
-  background: rgba(9, 6, 20, 0.53);
+  background: rgba(9, 6, 20, 0.23);
   position: absolute;
   top: 0;
   min-height: 100%;
@@ -14889,17 +14888,17 @@ header.nav-fixed {
 }
 
 .w3l-main-slider .banner-top1 {
-  background: url(../images/banner2.jpg) no-repeat center;
+  background: url(../images/wigandwignet/WeChat\ Image_20210813170332.jpg) no-repeat center;
   background-size: cover;
 }
 
 .w3l-main-slider .banner-top2 {
-  background: url(../images/banner3.jpg) no-repeat center;
+  background: url(../images/wigandwignet/WeChat\ Image_20210813170437.jpg) no-repeat center;
   background-size: cover;
 }
 
 .w3l-main-slider .banner-top3 {
-  background: url(../images/banner4.jpg) no-repeat center;
+  background: url(../images/sprayandaccessories/WeChat\ Image_20210813171919.jpg) no-repeat center;
   background-size: cover;
 }
 
@@ -16084,18 +16083,18 @@ p {
 ul.resp-tabs-list {
   max-width: 600px;
   /* margin-left: auto; */
-  margin-right: auto;
+  margin-right: 0 auto;
 }
 
 .resp-tabs-list li {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   padding: 10px;
   margin: 0 2% 0 0%;
   list-style: none;
   cursor: pointer;
   float: left;
-  width: 30%;
+  width: 25%;
   text-align: center;
   color: var(--theme-dark)!important;
   background: var(--theme-lite);
@@ -16363,7 +16362,7 @@ h2.resp-accordion:first-child {
 
 .w3l-mid-slider .mid-view::before {
   content: "";
-  background: rgba(9, 6, 20, 0.6);
+  background: rgba(9, 6, 20, 0.3);
   position: absolute;
   top: 0;
   min-height: 100%;
@@ -16508,10 +16507,16 @@ nav#breadcrumbs {
   font-size: 14px;
 }
 
+nav#breadcrumbs {
+  letter-spacing: .2rem;
+}
+
 nav#breadcrumbs a {
   color: var(--theme-rose);
   margin: 0 5px 0 0;
   font-size: 14px;
+  font-weight: 700;
+  display: inline-block;
 }
 
 nav#breadcrumbs a:hover {
